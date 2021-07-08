@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "TTHovesLight";
+    src: url("../fonts/TTHovesLight.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "TTHovesRegular";
+    src: url("../fonts/TTHovesRegular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TTHovesMedium";
+    src: url("../fonts/TTHovesMedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TTHovesBold";
+    src: url("../fonts/TTHovesBold.ttf");
+    font-weight: 700;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+#header {
+    position: absolute;
+    width: 100%;
+
+}
+
+.header__logo {
+    padding-top: 15px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+}
+
+.header__nav__item {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 20px;
+    transition: all .6s linear;
+}
+
+.header__nav__item:hover:before {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    background: #000;
+    margin: -8px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.header__nav__item:hover:after {
+    left: calc(100%);
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+
+
+}
+
+
+/*HEADER*/
+
+
+/*HERO*/
+
+
+.hero__img {
+    width: 570px;
+    height: 629px;
+}
+.hero__title{
+    padding-top: 238px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.hero__desc{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: #333333;
+}
+.hero__p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+}
+.hero__img{
+    padding-top: 80px;
+}
+.btn{
+    padding: 14px 50px;
+    margin-top: -67px;
+    background: white;
+    color: black;
+    text-align: center;
+    text-transform: uppercase ;
+}
+.slick-arrow{
+    position: absolute;
+}
+.slick-arrow.slick-next{
+    background: url("../images/right.svg") no-repeat center/30px;
+    font-size: 0;
+    top: 450px;
+    left: 50px;
+    width: 60px;
+    border:none;
+    height: 50px;
+}
+.slick-arrow.slick-prev{
+    background: url("../images/left.svg") no-repeat center/30px;
+    font-size: 0;
+    width: 60px;
+    top: 450px;
+    z-index: 4;
+    border:none;
+    height: 50px;
+}
+/*HERO*/
+
+/*ABOUT*/
+#about{
+    padding-bottom: 40px;
+    padding-top: 50px;
+
+}
+.about__title{
+    font-family: "TTHovesLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+
+
+.about__desc{
+    font-family: "TTHovesLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+.about__link{
+
+}
+/*ABOUT*/
+
+
+/*TASKS*/
+.tasks__title{
+    position: absolute;
+    justify-content: flex-end;
+    font-family: "TTHovesLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.tasks__num{
+    position: absolute;
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 239px;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+
+}
+.tasks__desc{
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+
+    font-family: "TTHovesLight";
+    padding-top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+    width: 279px;
+    height: 144px;
+    left:-100px;
+    top: 1763px;
+
+}
+
+
+
+
+/*TASKS*/
+
+/*PROJECT*/
+#projects{
+   position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.projects__title{
+    padding-top: 100px;
+    width: 427px;
+    height: 64px;
+    left: 135px;
+    top: 2027px;
+    font-family: "TTHovesLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+
+}
+.row2{
+    padding-bottom: 300px;
+}
+.block{
+    position: relative;
+}
+.block img{
+    position: absolute;
+}
+.reg{
+ position: absolute;
+    content: '';
+    width: 570px;
+    height: 255px;
+    background: transparent;
+    transition: 0.5s;
+    transform: translate(0,-10%) perspective(-4cm);
+}
+.reg:hover{
+    width: 90%;
+    transform: translate(0) perspective(0);
+    background-color: rgba(24,22,21,0.64);
+}
+
+.reg h1{
+ position: absolute;
+    content: '';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 50px;
+    padding-left: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    transition: 0.6s;
+    transform: translateY(0) rotateX(720deg) scaleX(0);
+}
+.reg:hover h1{
+    transform: translateY(0) rotateX(0) scaleX(1);
+}
+.reg p{
+position: absolute;
+    content: '';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 180px;
+    padding-left: 20px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: 0.6s;
+    transform: translateY(0) rotateX(50deg) scaleX(0);
+}
+.reg:hover p{
+  transform: translateY(0) rotateX(0) scaleX(1);
+}
+/*PROJECT*/
